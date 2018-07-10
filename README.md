@@ -39,12 +39,24 @@ Hungarian algorithm + Kalman filter multitarget tracker implementation.
 10. YOLO and Tiny YOLO detectors from https://pjreddie.com/darknet/yolo/
 11. Simple Abandoned detector
 
-#### Build
+
+##### Old Build Instructions (ambiguous)
 1. Download project sources
 2. Install CMake
 3. Install OpenCV (https://github.com/opencv/opencv) and OpenCV contrib (https://github.com/opencv/opencv_contrib) repositories
 4. Configure project CmakeLists.txt, set OpenCV_DIR. If opencv_contrib don't installed then set disable options USE_OCV_BGFG, USE_OCV_KCF and USE_OCV_UKF
 5. Go to the build directory and run make
+
+##### New Build Instructions - taken from [here](https://github.com/Smorodov/Multitarget-tracker/issues/43#issuecomment-324213180)
+1. You need CMake gui application, start it.
+2. Select folder Mulitarget-tracker (with CMakeLists.txt file) as source code directory.
+3. Select subfolder build as.. build directory.
+4. Push a button Configure, select your MSVC compiler. Wait.
+5. If OpenCV wasn't founded automatic then select OpenCV_DIR manually. Push a button Configure again.
+6. Push a button Generate.
+7. Now the folder build contains a solution file (.sln). Lets open it in Visual studio!
+
+
 
 **Usage:**
 
